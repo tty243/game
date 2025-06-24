@@ -88,13 +88,13 @@
 <body>
 
   <!-- Page Title -->
-  <h1 class="page-title">Could I Guess What Number You're Thinking of?</h1>
+  <h1 class="page-title">I can read your mind!</h1>
 
   <!-- Main Box -->
   <div class="container-box">
     
 
-    <input type="number" id="numberInput" class="form-control mb-3" placeholder="Try it..." />
+    <input type="number" id="numberInput" class="form-control mb-3" placeholder="pick a number..." />
 
     <button onclick="startLoading()" class="btn btn-light btn-light-shadow w-100">Submit</button>
 
@@ -126,7 +126,7 @@
       const interval = setInterval(() => {
         if (width >= 100) {
           clearInterval(interval);
-          message.innerHTML = `It's <strong>${number}</strong> you stupid...  I win`;
+          message.innerHTML = `You're thinking of the number <strong>${number}</strong>`;
           message.style.display = 'block';
         } else {
           width++;
